@@ -18,6 +18,7 @@ import io.vertx.rxjava3.sqlclient.Tuple;
 import io.vertx.sqlclient.PoolOptions;
 import io.vertx.test.core.VertxTestBase;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.utility.DockerImageName;
@@ -31,6 +32,7 @@ import java.util.stream.Collectors;
 /**
  * @author Thomas Segismont
  */
+@Ignore
 public class SqlClientTest extends VertxTestBase {
 
   protected static final List<String> NAMES = Arrays.asList("John", "Paul", "Peter", "Andrew", "Peter", "Steven");
